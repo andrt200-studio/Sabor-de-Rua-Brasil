@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sabor de Rua Brasil — authentic Brazilian street food in Twickenham.">
+<title>Sabor de Rua Brasil | Twickenham</title>
+<style>
+:root{--g:#004b29;--g2:#063d25;--gold:#f5ad00;--cream:#f8f0dc;--ink:#12251a;--line:#d8c79f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:#111;font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}.top{height:38px;background:var(--g);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 28px;font-size:12px}.social{font-size:18px;letter-spacing:7px}
+.nav{height:48px;background:#fff;display:flex;align-items:center;justify-content:center;gap:38px;position:sticky;top:0;z-index:20;border-bottom:1px solid #ddd}.nav a{text-decoration:none;font-size:13px;font-weight:800}.nav a:hover{color:var(--g2)}
+.hero{min-height:610px;background:linear-gradient(145deg,#003d23,#0b6339);position:relative;overflow:hidden;color:#fff;display:flex;align-items:center;text-align:center}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 8% 16%,rgba(74,151,72,.45),transparent 16%),radial-gradient(circle at 92% 12%,rgba(74,151,72,.42),transparent 17%),linear-gradient(180deg,transparent 72%,rgba(4,44,25,.7));}.hero:after{content:"🌴  🌴  🌴  🌴  🌴  🌴";position:absolute;bottom:4px;left:0;right:0;font-size:44px;opacity:.48;letter-spacing:8px}.hero-inner{position:relative;z-index:2;width:min(760px,90%);margin:auto}.crown{color:var(--gold);font-size:44px;line-height:1}.eyebrow{font-size:13px;letter-spacing:4px;font-weight:700;margin:6px 0 10px}.hero h1{font-size:clamp(54px,8vw,92px);line-height:.88;margin:0 0 20px;letter-spacing:1px}.hero p{font-size:17px;max-width:620px;margin:auto;line-height:1.45}.buttons{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:28px}.btn{padding:15px 28px;border-radius:4px;text-decoration:none;font-weight:900}.gold{background:var(--gold);color:#111}.white{background:#fff;color:var(--ink)}
+.phone{width:285px;background:#111;border:7px solid #111;border-radius:35px 35px 0 0;margin:35px auto 0;overflow:hidden;box-shadow:0 10px 35px #0005}.phone-top{background:var(--g);padding:12px;color:#fff;font-size:9px}.phone-body{background:var(--cream);padding:24px 14px;color:var(--ink)}.phone-body h2{font-size:31px;line-height:.9;color:var(--g);margin:7px 0 14px}.phone-btn{display:block;background:var(--gold);padding:10px;margin:10px 0;text-decoration:none;font-weight:800;font-size:11px}.phone-btn.white{background:#fff;border:1px solid #bbb}
+.people{background:var(--g);color:#fff;display:grid;grid-template-columns:1fr 1fr}.person{padding:38px 35px;text-align:center}.person+.person{border-left:1px solid rgba(245,173,0,.5)}.person h2{font-size:14px;color:var(--gold);letter-spacing:1px;margin:5px}.person h3{font-family:cursive;font-size:34px;line-height:1;margin:8px 0 15px;font-weight:500}.born{display:inline-block;background:var(--gold);color:#111;padding:6px 10px;font-size:10px;font-weight:900;margin:4px 0 12px}.person p{font-size:12px;line-height:1.5;max-width:470px;margin:9px auto}
+.features{display:grid;grid-template-columns:repeat(4,1fr);background:var(--g);border-top:1px solid #c89700;color:#fff}.feature{text-align:center;padding:22px 10px;border-right:1px solid rgba(245,173,0,.4)}.feature:last-child{border:0}.feature .i{font-size:30px}.feature b{display:block;color:#fff;font-size:10px;margin:5px}.feature small{font-size:9px}
+.bottom{background:var(--cream);display:grid;grid-template-columns:1fr 1fr 1fr;text-align:center;align-items:center;padding:22px 18px;color:var(--g);font-size:11px}.thanks{font-family:cursive;font-size:24px}.footer{background:var(--g);color:#fff;padding:20px;text-align:center;font-size:11px}.footer a{color:var(--gold)}
+.menu{background:#fff;padding:35px 30px}.menu-head{text-align:center}.menu-head .logo{font-size:37px;font-weight:900;color:var(--g);line-height:.88}.strip{display:inline-block;background:var(--gold);font-size:9px;font-weight:900;padding:5px 11px;margin:10px}.menu-head p{font-size:10px}.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:1100px;margin:0 auto}.menu-cols>div+div{border-left:1px solid var(--line);padding-left:25px}.section{margin:16px 0 7px}.section-title{display:inline-block;background:var(--g);color:#fff;padding:7px 12px;border-radius:3px;font-size:10px;font-weight:900}.item{padding:8px 0;border-bottom:1px solid #ddd0b0;font-size:10px}.item strong{float:right}.item p{font-size:8px;margin:3px 0;line-height:1.3}.label{display:inline-block;background:var(--g);color:#fff;padding:4px 8px;border-radius:12px;font-size:7px;font-weight:900;margin-top:9px}
+@media(max-width:850px){.people{grid-template-columns:1fr}.person+.person{border-left:0;border-top:1px solid rgba(245,173,0,.5)}.features{grid-template-columns:1fr 1fr}.menu-cols{grid-template-columns:1fr}.menu-cols>div+div{border-left:0;padding-left:0}.bottom{grid-template-columns:1fr;gap:15px}.nav{gap:20px}.nav a{font-size:11px}}
+@media(max-width:520px){.top{height:auto;min-height:38px;padding:7px 10px;font-size:9px}.social{font-size:14px}.nav{gap:15px;height:45px}.nav a{font-size:10px}.hero{min-height:570px}.hero h1{font-size:49px}.hero p{font-size:14px}.buttons{gap:9px}.btn{padding:13px 18px;font-size:12px}.features{grid-template-columns:1fr 1fr}.feature{padding:15px 4px}.person{padding:30px 20px}.person h3{font-size:30px}.menu{padding:25px 16px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <span>Brazilian street food in Twickenham</span>
+  <span>+44 7960 028233 &nbsp; | &nbsp; +44 7956 874490</span>
+  <span class="social">◎ ●</span>
+</header>
+
+<nav class="nav">
+  <a href="#food">Our food</a>
+  <a href="#menu">Menu</a>
+  <a href="#find">Find us</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+<section class="hero" id="food">
+  <div class="hero-inner">
+    <div class="crown">♛</div>
+    <div class="eyebrow">AUTHENTIC BRAZILIAN FLAVOURS</div>
+    <h1>SABOR DE<br>RUA BRASIL</h1>
+    <p>Fresh from the grill, full of flavour and served with a Brazilian street-food twist.</p>
+    <div class="buttons">
+      <a class="btn gold" href="#menu">See the menu</a>
+      <a class="btn white" href="https://wa.me/447960028233">Book a table<br>on WhatsApp</a>
+    </div>
+    <div class="phone">
+      <div class="phone-top">Brazilian street food in Twickenham<br>+44 7960 028233 &nbsp; | &nbsp; +44 7956 874490<br><br>◎ &nbsp; ●</div>
+      <div class="phone-body">
+        <div class="crown" style="font-size:28px">♛</div>
+        <div style="font-size:8px;letter-spacing:2px">AUTHENTIC BRAZILIAN FLAVOURS</div>
+        <h2>SABOR DE<br>RUA BRASIL</h2>
+        <p>Fresh from the grill, full of flavour and served with a Brazilian street-food twist.</p>
+        <a class="phone-btn" href="#menu">See the menu</a>
+        <a class="phone-btn white" href="https://wa.me/447960028233">Book a table<br>on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="people">
+  <article class="person">
+    <div class="crown" style="font-size:30px">♛</div>
+    <h2>OUR HEAD CHEF</h2>
+    <h3>Maxsuel Xistoli</h3>
+    <div class="born">🇧🇷 &nbsp; BORN IN ESPIRITO SANTO, BRAZIL &nbsp; 🇧🇷</div>
+    <p>Maxsuel brings the true flavours of the streets to Twickenham.</p>
+    <p>With years of experience in Brazilian cuisine, he's passionate about grilling the finest ingredients and sharing the vibrant culture, warmth and spirit of Brazil in every dish.</p>
+    <p>Every meal is made with love, inspired by tradition and made to bring people together.</p>
+  </article>
+  <article class="person">
+    <div class="crown" style="font-size:30px">♛</div>
+    <h2>ABOUT THE FOUNDERS</h2>
+    <h3>Darren Muylders<br>& Andrea Pancione</h3>
+    <p>Founded by Darren Muylders and Andrea Pancione, Sabor de Rua Brasil was created from a shared vision: to bring an authentic Brazilian dining experience to Twickenham while creating a place where the Brazilian community and food lovers can come together.</p>
+    <p>With Darren's experience at the prestigious Savoy Hotel and Andrea's background with Gaucho restaurants, the founders bring a wealth of hospitality and restaurant expertise, with a commitment to delivering a five-star experience in the heart of Twickenham.</p>
+    <p>Together with Head Chef Maxsuel Xistoli, born in Espírito Santo, Brazil, the team invites you to discover an unforgettable dining experience at The Three Kings.</p>
+  </article>
+</section>
+
+<section class="features">
+  <div class="feature"><div class="i">🍢</div><b>AUTHENTIC<br>STREET FOOD</b><small>Inspired by the streets of Brazil.</small></div>
+  <div class="feature"><div class="i">🔥</div><b>GRILLED<br>TO PERFECTION</b><small>Fresh ingredients, bold flavours.</small></div>
+  <div class="feature"><div class="i">👥</div><b>MADE FOR<br>EVERYONE</b><small>Good food, good vibes, great company.</small></div>
+  <div class="feature"><div class="i">🎵</div><b>LIVE MUSIC &<br>GREAT VIBES</b><small>Bringing the spirit of Brazil to life.</small></div>
+</section>
+
+<section class="bottom" id="contact">
+  <div>◎<br><b>FOLLOW US</b><br>@saborderuabrasil</div>
+  <div class="thanks">Obrigado e volte sempre!</div>
+  <div>◉<br><b>BOOK A TABLE</b><br><a href="https://wa.me/447960028233">on WhatsApp</a></div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="menu-head">
+    <div class="crown" style="font-size:30px">♛</div>
+    <div class="logo">SABOR DE<br>RUA BRASIL</div>
+    <div class="strip">BRAZILIAN STREET FOOD AT THE THREE KINGS, TWICKENHAM</div>
+    <p>Authentic Brazilian flavours, grilled fresh and served with a street-food twist.</p>
+  </div>
+  <div class="menu-cols">
+    <div>
+      <div class="section"><span class="section-title">🍢 BRAZILIAN GRILL</span></div>
+      <div class="item"><b>Chicken Skewer</b><strong>£13.00</strong><p>Marinated grilled chicken skewer served with Brazilian-style salad.</p></div>
+      <div class="item"><b>Chicken Skewer – Full Plate</b><strong>£16.00</strong><p>Marinated grilled chicken skewer served with chips and Brazilian-style salad.</p></div>
+      <div class="item"><b>Steak Skewer</b><strong>£15.00</strong><p>Tender marinated beef skewer served with Brazilian-style salad.</p></div>
+      <div class="item"><b>Steak Skewer – Full Plate</b><strong>£18.00</strong><p>Tender marinated beef skewer served with chips and Brazilian-style salad.</p></div>
+      <span class="label">★ SIGNATURE DISH</span>
+      <div class="item"><b>Picanha and Brazilian Style Chips ⭐</b><strong>£22.00</strong><p>Tender picanha steak grilled to perfection and served with crispy chips.</p></div>
+      <div class="section"><span class="section-title">🍗 CHICKEN SPECIALTIES</span></div>
+      <div class="item"><b>Chicken Heart Skewer</b><strong>£12.00</strong><p>Grilled chicken hearts skewer seasoned with herbs and spices.</p></div>
+      <div class="section"><span class="section-title">🥗 BRAZILIAN SALADS</span></div>
+      <div class="item"><b>Brazilian Chicken Salad</b><strong>£11.00</strong><p>Grilled chicken served with fresh mixed salad and Brazilian vinaigrette.</p></div>
+      <div class="item"><b>Brazilian Steak Salad</b><strong>£13.00</strong><p>Grilled steak served with fresh mixed salad and Brazilian vinaigrette.</p></div>
+      <div class="item"><b>Brazilian Salad</b><strong>£5.00</strong><p>Fresh chopped salad with tomato, onion, green pepper and Brazilian vinaigrette.</p></div>
+      <div class="section"><span class="section-title">🍔 BRAZILIAN STREET BURGERS</span></div>
+      <div class="item"><b>X-Tudo Brazilian Burger</b><strong>£15.00</strong><p>Brazilian-style loaded beef burger with melted cheese, ham, bacon and a fried egg, served with sautéed potatoes and fresh salad.</p></div>
+      <div class="item"><b>X-Tudo Brazilian Burger + Chips</b><strong>£18.00</strong><p>Our fully loaded Brazilian X-Tudo burger served with crispy chips.</p></div>
+    </div>
+    <div>
+      <div class="section"><span class="section-title">🍟 SIDES</span></div>
+      <div class="item"><b>Brazilian-Style Chips</b><strong>£5.00</strong><p>Crispy golden chips, perfect alongside any of our dishes.</p></div>
+      <div class="item"><b>Sautéed Potatoes</b><strong>£5.00</strong><p>Brazilian-style seasoned sautéed potatoes.</p></div>
+      <div class="item"><b>Brazilian Vinaigrette Salad</b><strong>£5.00</strong><p>Fresh tomato, onion and green pepper with a light Brazilian vinaigrette.</p></div>
+      <div class="item"><b>White Rice</b><strong>£5.00</strong><p>Steamed white rice.</p></div>
+      <div class="item"><b>Farofa Temperada</b><strong>£5.00</strong><p>Toasted cassava flour with herbs, onion and butter.</p></div>
+      <span class="label">🌿 VEGETARIAN OPTION</span>
+      <div class="item"><b>Crispy Mushroom and Cheese Skewer 🌿</b><strong>£13.00</strong><p>Crispy breaded mushrooms filled with melted cheese and herbs.</p></div>
+      <span class="label">SAUCES</span>
+      <div class="item"><b>Chimichurri Sauce</b><strong>£3.00</strong><p>Authentic Brazilian chimichurri sauce.</p></div>
+      <div class="section"><span class="section-title">🧒 KIDS' BRAZILIAN MENU</span></div>
+      <div class="item"><b>Kids Chicken Skewer</b><strong>£8.50</strong><p>Chicken skewer with chips and salad.</p></div>
+      <div class="item"><b>Kids Brazilian Burger</b><strong>£8.50</strong><p>Mini beef burger with cheese, served with chips.</p></div>
+      <div class="item"><b>Kids Chicken &amp; Chips</b><strong>£8.00</strong><p>Grilled chicken pieces with chips.</p></div>
+      <div class="section"><span class="section-title">⭐ SPECIAL BRAZILIAN EVENTS</span></div>
+      <div class="item" style="text-align:center"><b>Brazilian Nights</b><p>Live music, great vibes and authentic Brazilian flavours!</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer" id="find">
+  <b>SABOR DE RUA BRASIL</b><br>
+  The Three Kings, Twickenham &nbsp; | &nbsp; <a href="https://wa.me/447960028233">Book on WhatsApp</a>
+</footer>
+</body>
+</html>
