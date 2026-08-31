@@ -3,105 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Sabor de Rua Brasil — authentic Brazilian street food in Twickenham.">
+<meta name="description" content="Sabor de Rua Brasil — authentic Brazilian street food inside The Three Kings in Twickenham.">
 <title>Sabor de Rua Brasil | Twickenham</title>
 <style>
-:root{--g:#004b29;--g2:#063d25;--gold:#f5ad00;--cream:#f8f0dc;--ink:#12251a;--line:#d8c79f}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:#111;font-family:Arial,Helvetica,sans-serif}
-a{color:inherit}.top{height:38px;background:var(--g);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 28px;font-size:12px}.social{font-size:18px;letter-spacing:7px}
-.nav{height:48px;background:#fff;display:flex;align-items:center;justify-content:center;gap:38px;position:sticky;top:0;z-index:20;border-bottom:1px solid #ddd}.nav a{text-decoration:none;font-size:13px;font-weight:800}.nav a:hover{color:var(--g2)}
-.hero{min-height:610px;background:linear-gradient(145deg,#003d23,#0b6339);position:relative;overflow:hidden;color:#fff;display:flex;align-items:center;text-align:center}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 8% 16%,rgba(74,151,72,.45),transparent 16%),radial-gradient(circle at 92% 12%,rgba(74,151,72,.42),transparent 17%),linear-gradient(180deg,transparent 72%,rgba(4,44,25,.7));}.hero:after{content:"🌴  🌴  🌴  🌴  🌴  🌴";position:absolute;bottom:4px;left:0;right:0;font-size:44px;opacity:.48;letter-spacing:8px}.hero-inner{position:relative;z-index:2;width:min(760px,90%);margin:auto}.crown{color:var(--gold);font-size:44px;line-height:1}.eyebrow{font-size:13px;letter-spacing:4px;font-weight:700;margin:6px 0 10px}.hero h1{font-size:clamp(54px,8vw,92px);line-height:.88;margin:0 0 20px;letter-spacing:1px}.hero p{font-size:17px;max-width:620px;margin:auto;line-height:1.45}.buttons{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:28px}.btn{padding:15px 28px;border-radius:4px;text-decoration:none;font-weight:900}.gold{background:var(--gold);color:#111}.white{background:#fff;color:var(--ink)}
-.phone{width:285px;background:#111;border:7px solid #111;border-radius:35px 35px 0 0;margin:35px auto 0;overflow:hidden;box-shadow:0 10px 35px #0005}.phone-top{background:var(--g);padding:12px;color:#fff;font-size:9px}.phone-body{background:var(--cream);padding:24px 14px;color:var(--ink)}.phone-body h2{font-size:31px;line-height:.9;color:var(--g);margin:7px 0 14px}.phone-btn{display:block;background:var(--gold);padding:10px;margin:10px 0;text-decoration:none;font-weight:800;font-size:11px}.phone-btn.white{background:#fff;border:1px solid #bbb}
-.people{background:var(--g);color:#fff;display:grid;grid-template-columns:1fr 1fr}.person{padding:38px 35px;text-align:center}.person+.person{border-left:1px solid rgba(245,173,0,.5)}.person h2{font-size:14px;color:var(--gold);letter-spacing:1px;margin:5px}.person h3{font-family:cursive;font-size:34px;line-height:1;margin:8px 0 15px;font-weight:500}.born{display:inline-block;background:var(--gold);color:#111;padding:6px 10px;font-size:10px;font-weight:900;margin:4px 0 12px}.person p{font-size:12px;line-height:1.5;max-width:470px;margin:9px auto}
-.features{display:grid;grid-template-columns:repeat(4,1fr);background:var(--g);border-top:1px solid #c89700;color:#fff}.feature{text-align:center;padding:22px 10px;border-right:1px solid rgba(245,173,0,.4)}.feature:last-child{border:0}.feature .i{font-size:30px}.feature b{display:block;color:#fff;font-size:10px;margin:5px}.feature small{font-size:9px}
-.bottom{background:var(--cream);display:grid;grid-template-columns:1fr 1fr 1fr;text-align:center;align-items:center;padding:22px 18px;color:var(--g);font-size:11px}.thanks{font-family:cursive;font-size:24px}.footer{background:var(--g);color:#fff;padding:20px;text-align:center;font-size:11px}.footer a{color:var(--gold)}
-.menu{background:#fff;padding:35px 30px}.menu-head{text-align:center}.menu-head .logo{font-size:37px;font-weight:900;color:var(--g);line-height:.88}.strip{display:inline-block;background:var(--gold);font-size:9px;font-weight:900;padding:5px 11px;margin:10px}.menu-head p{font-size:10px}.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:1100px;margin:0 auto}.menu-cols>div+div{border-left:1px solid var(--line);padding-left:25px}.section{margin:16px 0 7px}.section-title{display:inline-block;background:var(--g);color:#fff;padding:7px 12px;border-radius:3px;font-size:10px;font-weight:900}.item{padding:8px 0;border-bottom:1px solid #ddd0b0;font-size:10px}.item strong{float:right}.item p{font-size:8px;margin:3px 0;line-height:1.3}.label{display:inline-block;background:var(--g);color:#fff;padding:4px 8px;border-radius:12px;font-size:7px;font-weight:900;margin-top:9px}
-@media(max-width:850px){.people{grid-template-columns:1fr}.person+.person{border-left:0;border-top:1px solid rgba(245,173,0,.5)}.features{grid-template-columns:1fr 1fr}.menu-cols{grid-template-columns:1fr}.menu-cols>div+div{border-left:0;padding-left:0}.bottom{grid-template-columns:1fr;gap:15px}.nav{gap:20px}.nav a{font-size:11px}}
-@media(max-width:520px){.top{height:auto;min-height:38px;padding:7px 10px;font-size:9px}.social{font-size:14px}.nav{gap:15px;height:45px}.nav a{font-size:10px}.hero{min-height:570px}.hero h1{font-size:49px}.hero p{font-size:14px}.buttons{gap:9px}.btn{padding:13px 18px;font-size:12px}.features{grid-template-columns:1fr 1fr}.feature{padding:15px 4px}.person{padding:30px 20px}.person h3{font-size:30px}.menu{padding:25px 16px}}
+:root{--green:#063d25;--deep:#001b11;--gold:#f7b500;--cream:#f6eedc;--white:#fff;--ink:#101510}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--deep);color:#fff;font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}.top{background:#00180e;border-bottom:1px solid #a97a00;min-height:43px;padding:9px 4%;display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;font-size:12px;font-weight:900}.top .gold{color:var(--gold)}
+.nav{background:#020b08;min-height:72px;display:flex;align-items:center;justify-content:center;gap:34px;border-bottom:1px solid #1c4a35;position:sticky;top:0;z-index:30}.brand{position:absolute;left:4%;top:52px;z-index:40;text-align:left;line-height:.78;font-weight:900;font-style:italic;font-size:31px}.brand span:nth-child(1){color:var(--gold)}.brand span:nth-child(2){color:#fff}.brand span:nth-child(3){color:#159447}.nav a{text-decoration:none;font-size:12px;font-weight:900}.nav a:hover{color:var(--gold)}.book{background:var(--gold);color:#111!important;padding:14px 20px;border-radius:3px}
+.hero{position:relative;min-height:535px;overflow:hidden;text-align:center;background:radial-gradient(circle at 18% 52%,rgba(0,115,55,.85),transparent 30%),radial-gradient(circle at 83% 30%,rgba(0,95,45,.8),transparent 27%),linear-gradient(145deg,#010806,#031f14 52%,#00150d)}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(125deg,transparent 0 22px,rgba(23,123,65,.12) 23px 27px,transparent 28px 48px),linear-gradient(160deg,transparent 60%,rgba(247,181,0,.10));opacity:.9}.flag-art{position:absolute;left:-80px;top:105px;width:360px;height:210px;transform:rotate(-10deg);background:linear-gradient(28deg,#137c3e 0 28%,#f5c400 28% 70%,#0b6f3a 70%);clip-path:polygon(0 25%,100% 0,86% 100%,0 75%);opacity:.75}.flag-art:after{content:"";position:absolute;width:115px;height:115px;border-radius:50%;background:#174eaa;left:105px;top:45px;box-shadow:inset 0 0 0 8px rgba(255,255,255,.08)}
+.hero-content{position:relative;z-index:2;max-width:930px;margin:auto;padding:68px 20px 48px}.eyebrow{color:var(--gold);font-size:15px;letter-spacing:5px;font-weight:900}.hero h1{margin:12px 0 8px;font-size:clamp(58px,9vw,110px);line-height:.82;letter-spacing:2px;font-weight:1000}.hero h1 span{color:var(--gold)}.strap{display:inline-block;background:var(--green);padding:6px 18px;font-size:20px;font-weight:900}.hero p{font-size:16px;line-height:1.45;max-width:650px;margin:18px auto}.hero-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.cta{padding:15px 25px;border:1px solid var(--gold);border-radius:4px;text-decoration:none;font-weight:900;font-size:12px;background:#063d25}.cta.yellow{background:var(--gold);color:#111}.cta small{display:block;font-size:9px;margin-top:3px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);background:#001d12;border-top:1px solid var(--gold);border-bottom:1px solid #174a32}.feature{padding:24px 15px;text-align:center;border-right:1px solid #6b590f}.feature:last-child{border:0}.feature .icon{font-size:34px}.feature h3{font-size:14px;margin:7px 0;color:#fff}.feature p{font-size:10px;margin:0;color:#ddd}
+.people{background:var(--cream);color:#13251a;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}.people:before,.people:after{content:"";position:absolute;width:180px;height:500px;background:linear-gradient(130deg,transparent,#0a5a32 45%,transparent 46%);opacity:.15}.people:before{left:-90px;top:-100px;transform:rotate(10deg)}.people:after{right:-90px;bottom:-100px;transform:rotate(190deg)}.person{padding:42px 42px;text-align:center;position:relative;z-index:2}.person+.person{border-left:1px solid #b8a46d}.person .flag{font-size:31px}.person h2{font-size:14px;letter-spacing:2px;color:var(--green);margin:8px}.person h3{font-family:cursive;font-size:37px;line-height:1;margin:10px 0 14px;font-weight:500}.born{display:inline-block;background:var(--gold);padding:7px 12px;font-size:10px;font-weight:900}.person p{max-width:520px;margin:11px auto;font-size:12px;line-height:1.55}.sabor-badge{margin:18px auto;width:185px;height:130px;background:var(--green);clip-path:polygon(50% 0,86% 15%,100% 52%,82% 100%,50% 86%,17% 100%,0 50%,17% 14%);display:flex;align-items:center;justify-content:center;color:#fff;font-size:23px;font-weight:900;font-style:italic;line-height:.9}
+.menu{background:#030806;padding:48px 3.2% 34px;position:relative}.menu:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(145deg,transparent 0 35px,rgba(255,255,255,.025) 36px 39px);pointer-events:none}.menu-head{position:relative;text-align:center}.menu-head h2{font-size:clamp(48px,7vw,78px);margin:0;font-weight:1000;letter-spacing:1px}.menu-head h2 span{color:var(--gold)}.menu-head p{color:var(--gold);font-weight:900;font-style:italic;font-size:17px;margin:2px 0 26px}.menu-cols{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:1250px;margin:auto}.menu-col{border:1px solid #b88a00;border-radius:8px;padding:10px 17px 16px;background:rgba(0,15,9,.55)}.section{margin:12px 0 7px}.section-title{display:inline-block;background:var(--green);padding:7px 12px;color:#fff;font-size:14px;font-weight:1000;border-left:4px solid var(--gold)}.item{padding:8px 2px;border-bottom:1px dotted #53634f;font-size:15px;font-weight:900}.item strong{float:right;color:var(--gold);font-size:16px}.item p{font-size:10px;line-height:1.3;margin:3px 0;color:#ddd;font-weight:400;max-width:92%}.label{display:inline-block;background:var(--gold);color:#111;padding:3px 7px;font-size:8px;font-weight:1000;margin-top:7px}
+.final{background:linear-gradient(90deg,#0a4d2d,#002316);padding:23px 4%;display:flex;justify-content:center;align-items:center;gap:25px;flex-wrap:wrap;border-top:1px solid var(--gold)}.final h2{font-size:35px;line-height:.85;margin:0}.final h2 span{color:var(--gold)}.contact{background:var(--cream);color:#13251a;padding:45px 20px;text-align:center}.contact h2{font-size:35px;color:var(--green);margin:0 0 22px}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;max-width:900px;margin:auto}.card{background:#fff;border:1px solid #d1bd87;padding:22px;font-size:12px}.card b{display:block;color:var(--green);margin:6px}.card a{text-decoration:none;font-weight:900}.footer{background:#00180e;color:#fff;text-align:center;padding:25px;font-size:11px}.footer .phones{color:var(--gold);font-weight:900}
+@media(max-width:850px){.brand{position:static;margin:0 0 10px;font-size:27px}.nav{padding:12px 10px;gap:18px;flex-wrap:wrap}.nav .book{padding:10px 13px}.features{grid-template-columns:1fr 1fr}.people{grid-template-columns:1fr}.person+.person{border-left:0;border-top:1px solid #b8a46d}.menu-cols{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.top{font-size:9px;gap:7px}.nav{gap:11px}.nav a{font-size:9px}.hero{min-height:570px}.hero-content{padding-top:45px}.eyebrow{font-size:11px;letter-spacing:3px}.hero h1{font-size:51px}.strap{font-size:13px}.hero p{font-size:13px}.cta{padding:13px 15px}.feature{padding:18px 7px}.feature h3{font-size:11px}.feature p{font-size:9px}.person{padding:34px 20px}.person h3{font-size:31px}.menu{padding:38px 10px}.menu-col{padding:8px 10px}.item{font-size:16px}.item strong{font-size:16px}.item p{font-size:10px}.section-title{font-size:12px}.final h2{font-size:29px}}
 </style>
 </head>
 <body>
-
 <header class="top">
-  <span>Brazilian street food in Twickenham</span>
-  <span>+44 7960 028233 &nbsp; | &nbsp; +44 7956 874490</span>
-  <span class="social">◎ ●</span>
+  <span>📍 INSIDE THE THREE KINGS, TWICKENHAM</span>
+  <span class="gold">☎ +44 7960 028233</span>
+  <span>|</span>
+  <span class="gold">☎ +44 7956 874490</span>
 </header>
 
 <nav class="nav">
-  <a href="#food">Our food</a>
-  <a href="#menu">Menu</a>
-  <a href="#find">Find us</a>
-  <a href="#contact">Contact</a>
+  <div class="brand"><span>Sabor</span><br><span>de Rua</span><br><span>Brasil 🇧🇷</span></div>
+  <a href="#home">HOME</a><a href="#food">OUR FOOD</a><a href="#menu">MENU</a><a href="#events">BRAZILIAN NIGHTS</a><a href="#about">ABOUT US</a><a href="#find">FIND US</a><a href="#contact">CONTACT</a>
+  <a class="book" href="https://wa.me/447960028233">📅 BOOK A TABLE</a>
 </nav>
 
-<main>
-<section class="hero" id="food">
-  <div class="hero-inner">
-    <div class="crown">♛</div>
+<section class="hero" id="home">
+  <div class="flag-art"></div>
+  <div class="hero-content">
     <div class="eyebrow">AUTHENTIC BRAZILIAN FLAVOURS</div>
-    <h1>SABOR DE<br>RUA BRASIL</h1>
+    <h1>SABOR DE<br>RUA <span>BRASIL</span></h1>
+    <div class="strap">THE TASTE OF BRAZIL. RIGHT HERE IN TWICKENHAM.</div>
     <p>Fresh from the grill, full of flavour and served with a Brazilian street-food twist.</p>
-    <div class="buttons">
-      <a class="btn gold" href="#menu">See the menu</a>
-      <a class="btn white" href="https://wa.me/447960028233">Book a table<br>on WhatsApp</a>
-    </div>
-    <div class="phone">
-      <div class="phone-top">Brazilian street food in Twickenham<br>+44 7960 028233 &nbsp; | &nbsp; +44 7956 874490<br><br>◎ &nbsp; ●</div>
-      <div class="phone-body">
-        <div class="crown" style="font-size:28px">♛</div>
-        <div style="font-size:8px;letter-spacing:2px">AUTHENTIC BRAZILIAN FLAVOURS</div>
-        <h2>SABOR DE<br>RUA BRASIL</h2>
-        <p>Fresh from the grill, full of flavour and served with a Brazilian street-food twist.</p>
-        <a class="phone-btn" href="#menu">See the menu</a>
-        <a class="phone-btn white" href="https://wa.me/447960028233">Book a table<br>on WhatsApp</a>
-      </div>
+    <div class="hero-actions">
+      <a class="cta" href="#menu">▣ VIEW OUR MENU<small>EXPLORE OUR FOOD</small></a>
+      <a class="cta yellow" href="https://wa.me/447960028233">▣ BOOK A TABLE<small>RESERVE YOUR SPOT</small></a>
+      <a class="cta" href="tel:+447960028233">☎ CALL US<small>+44 7960 028233 · +44 7956 874490</small></a>
+      <a class="cta" href="https://wa.me/447960028233">◉ WHATSAPP<small>BOOK ON WHATSAPP</small></a>
     </div>
   </div>
 </section>
 
-<section class="people">
+<section class="features" id="food">
+  <div class="feature"><div class="icon">🔥</div><h3>AUTHENTIC<br>STREET FOOD</h3><p>Inspired by the streets of Brazil.</p></div>
+  <div class="feature"><div class="icon">🍢</div><h3>GRILLED<br>TO PERFECTION</h3><p>Fresh ingredients, bold flavours.</p></div>
+  <div class="feature"><div class="icon">👥</div><h3>MADE FOR<br>EVERYONE</h3><p>Good food, good vibes, great company.</p></div>
+  <div class="feature"><div class="icon">🎵</div><h3>LIVE MUSIC &<br>GREAT VIBES</h3><p>Bringing the spirit of Brazil to life.</p></div>
+</section>
+
+<section class="people" id="about">
   <article class="person">
-    <div class="crown" style="font-size:30px">♛</div>
-    <h2>OUR HEAD CHEF</h2>
-    <h3>Maxsuel Xistoli</h3>
-    <div class="born">🇧🇷 &nbsp; BORN IN ESPIRITO SANTO, BRAZIL &nbsp; 🇧🇷</div>
+    <div class="flag">🇧🇷</div><h2>HEAD CHEF</h2><h3>Maxsuel Xistoli</h3>
+    <div class="born">🇧🇷 BORN IN ESPIRITO SANTO, BRAZIL 🇧🇷</div>
     <p>Maxsuel brings the true flavours of the streets to Twickenham.</p>
     <p>With years of experience in Brazilian cuisine, he's passionate about grilling the finest ingredients and sharing the vibrant culture, warmth and spirit of Brazil in every dish.</p>
     <p>Every meal is made with love, inspired by tradition and made to bring people together.</p>
   </article>
   <article class="person">
-    <div class="crown" style="font-size:30px">♛</div>
-    <h2>ABOUT THE FOUNDERS</h2>
-    <h3>Darren Muylders<br>& Andrea Pancione</h3>
+    <div class="flag">🇧🇷</div><h2>FOUNDERS</h2><h3>Darren Muylders<br>& Andrea Pancione</h3>
     <p>Founded by Darren Muylders and Andrea Pancione, Sabor de Rua Brasil was created from a shared vision: to bring an authentic Brazilian dining experience to Twickenham while creating a place where the Brazilian community and food lovers can come together.</p>
     <p>With Darren's experience at the prestigious Savoy Hotel and Andrea's background with Gaucho restaurants, the founders bring a wealth of hospitality and restaurant expertise, with a commitment to delivering a five-star experience in the heart of Twickenham.</p>
     <p>Together with Head Chef Maxsuel Xistoli, born in Espírito Santo, Brazil, the team invites you to discover an unforgettable dining experience at The Three Kings.</p>
   </article>
 </section>
 
-<section class="features">
-  <div class="feature"><div class="i">🍢</div><b>AUTHENTIC<br>STREET FOOD</b><small>Inspired by the streets of Brazil.</small></div>
-  <div class="feature"><div class="i">🔥</div><b>GRILLED<br>TO PERFECTION</b><small>Fresh ingredients, bold flavours.</small></div>
-  <div class="feature"><div class="i">👥</div><b>MADE FOR<br>EVERYONE</b><small>Good food, good vibes, great company.</small></div>
-  <div class="feature"><div class="i">🎵</div><b>LIVE MUSIC &<br>GREAT VIBES</b><small>Bringing the spirit of Brazil to life.</small></div>
-</section>
-
-<section class="bottom" id="contact">
-  <div>◎<br><b>FOLLOW US</b><br>@saborderuabrasil</div>
-  <div class="thanks">Obrigado e volte sempre!</div>
-  <div>◉<br><b>BOOK A TABLE</b><br><a href="https://wa.me/447960028233">on WhatsApp</a></div>
-</section>
-
 <section class="menu" id="menu">
-  <div class="menu-head">
-    <div class="crown" style="font-size:30px">♛</div>
-    <div class="logo">SABOR DE<br>RUA BRASIL</div>
-    <div class="strip">BRAZILIAN STREET FOOD AT THE THREE KINGS, TWICKENHAM</div>
-    <p>Authentic Brazilian flavours, grilled fresh and served with a street-food twist.</p>
-  </div>
+  <div class="menu-head"><h2>OUR <span>MENU</span></h2><p>★ ★ &nbsp; AUTHENTIC BRAZILIAN STREET FOOD &nbsp; ★ ★</p></div>
   <div class="menu-cols">
-    <div>
+    <div class="menu-col">
       <div class="section"><span class="section-title">🍢 BRAZILIAN GRILL</span></div>
       <div class="item"><b>Chicken Skewer</b><strong>£13.00</strong><p>Marinated grilled chicken skewer served with Brazilian-style salad.</p></div>
       <div class="item"><b>Chicken Skewer – Full Plate</b><strong>£16.00</strong><p>Marinated grilled chicken skewer served with chips and Brazilian-style salad.</p></div>
@@ -114,12 +90,12 @@ a{color:inherit}.top{height:38px;background:var(--g);color:#fff;display:flex;jus
       <div class="section"><span class="section-title">🥗 BRAZILIAN SALADS</span></div>
       <div class="item"><b>Brazilian Chicken Salad</b><strong>£11.00</strong><p>Grilled chicken served with fresh mixed salad and Brazilian vinaigrette.</p></div>
       <div class="item"><b>Brazilian Steak Salad</b><strong>£13.00</strong><p>Grilled steak served with fresh mixed salad and Brazilian vinaigrette.</p></div>
-  
+      <div class="item"><b>Salada de Maionese</b><strong>£13.00</strong><p>Russet potatoes, Dijon mustard, mixed vegetables, carrots, peas, corn and apple cider vinegar.</p></div>
       <div class="section"><span class="section-title">🍔 BRAZILIAN STREET BURGERS</span></div>
       <div class="item"><b>X-Tudo Brazilian Burger</b><strong>£15.00</strong><p>Brazilian-style loaded beef burger with melted cheese, ham, bacon and a fried egg, served with sautéed potatoes and fresh salad.</p></div>
       <div class="item"><b>X-Tudo Brazilian Burger + Chips</b><strong>£18.00</strong><p>Our fully loaded Brazilian X-Tudo burger served with crispy chips.</p></div>
     </div>
-    <div>
+    <div class="menu-col">
       <div class="section"><span class="section-title">🍟 SIDES</span></div>
       <div class="item"><b>Brazilian-Style Chips</b><strong>£5.00</strong><p>Crispy golden chips, perfect alongside any of our dishes.</p></div>
       <div class="item"><b>Sautéed Potatoes</b><strong>£5.00</strong><p>Brazilian-style seasoned sautéed potatoes.</p></div>
@@ -139,11 +115,28 @@ a{color:inherit}.top{height:38px;background:var(--g);color:#fff;display:flex;jus
     </div>
   </div>
 </section>
-</main>
+
+<section class="final" id="events">
+  <h2>COME HUNGRY.<br><span>LEAVE HAPPY. 🇧🇷</span></h2>
+  <a class="cta yellow" href="https://wa.me/447960028233">📅 BOOK YOUR TABLE<small>RESERVE YOUR SPOT</small></a>
+  <a class="cta" href="tel:+447960028233">☎ CALL US NOW<small>+44 7960 028233 · +44 7956 874490</small></a>
+  <a class="cta" href="https://wa.me/447960028233">◉ WHATSAPP US<small>BOOK ON WHATSAPP</small></a>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Come and Experience Brazil</h2>
+  <div class="contact-grid">
+    <div class="card">📍<b>FIND US</b>Inside The Three Kings<br>Twickenham</div>
+    <div class="card">☎<b>CALL US</b><a href="tel:+447960028233">+44 7960 028233</a><br><a href="tel:+447956874490">+44 7956 874490</a></div>
+    <div class="card">💬<b>BOOK A TABLE</b><a href="https://wa.me/447960028233">Book on WhatsApp</a></div>
+  </div>
+</section>
 
 <footer class="footer" id="find">
-  <b>SABOR DE RUA BRASIL</b><br>
-  The Three Kings, Twickenham &nbsp; | &nbsp; <a href="https://wa.me/447960028233">Book on WhatsApp</a>
+  <b>SABOR DE RUA BRASIL 🇧🇷</b><br><br>
+  Inside The Three Kings, Twickenham<br><br>
+  <span class="phones">+44 7960 028233 &nbsp; | &nbsp; +44 7956 874490</span><br><br>
+  <a href="https://wa.me/447960028233">Book on WhatsApp</a>
 </footer>
 </body>
 </html>
